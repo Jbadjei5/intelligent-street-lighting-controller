@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-gradient-to-b from-night-start to-night-end text-white font-inter;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-space;
+  }
+}
+
+@layer utilities {
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-amber-glow focus:ring-offset-2 focus:ring-offset-night-start;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-amber-glow to-amber-600 bg-clip-text text-transparent;
+  }
+}
