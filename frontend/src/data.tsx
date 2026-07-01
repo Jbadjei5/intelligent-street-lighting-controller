@@ -1,3 +1,5 @@
+import { Sun, Activity, Zap, Cpu, Lightbulb, ToggleLeft, BookOpen, Target, Sparkles } from 'lucide-react';
+
 export const navLinks = [
   { name: 'Overview', href: '#overview' },
   { name: 'Services', href: '#how-it-works' },
@@ -20,38 +22,39 @@ export const overviewData = {
   title: 'Welcome To Our Project',
   description: 'Our intelligent street lighting controller represents the future of smart city infrastructure. By combining LDR-based ambient light detection with PIR motion sensing and PWM dimming technology, we create a system that adapts to environmental conditions in real-time, maximizing energy efficiency while ensuring public safety.',
   readMore: '#how-it-works',
+  keyPoints: ['Energy Efficient', 'Smart Adapting', 'Low Maintenance', 'Cost Effective'],
 };
 
 export const howItWorksData = [
   {
     title: 'LDR MODULE',
     description: 'Light Dependent Resistor detects ambient light levels, triggering automatic activation at dusk for seamless dusk-to-dawn operation.',
-    icon: '🔆',
+    icon: Sun,
   },
   {
     title: 'PIR SENSOR',
     description: 'HC-SR501 motion sensor detects pedestrian presence, signaling the controller to brighten LEDs when movement is detected.',
-    icon: '🚶',
+    icon: Activity,
   },
   {
     title: 'PWM CONTROL',
     description: 'Pulse-width modulation enables smooth LED dimming, allowing adaptive brightness levels based on sensor inputs.',
-    icon: '⚡',
+    icon: Zap,
   },
   {
     title: 'ARDUINO LOGIC',
     description: 'Microcontroller processes dual sensor inputs and implements intelligent control algorithms for optimal performance.',
-    icon: '🔌',
+    icon: Cpu,
   },
   {
     title: 'LED SYSTEM',
     description: 'High-efficiency LEDs with transistor drivers provide bright, reliable illumination while minimizing power consumption.',
-    icon: '�',
+    icon: Lightbulb,
   },
   {
     title: 'RELAY CONTROL',
     description: '2-channel relay module enables flexible power switching and integration with existing street lighting infrastructure.',
-    icon: '🔀',
+    icon: ToggleLeft,
   },
 ];
 
@@ -59,17 +62,17 @@ export const aboutData = [
   {
     title: 'Our Story',
     description: 'Born from a need to reduce energy consumption in public lighting, our project evolved into a comprehensive intelligent lighting solution that combines cutting-edge sensor technology with practical embedded systems engineering.',
-    icon: '📖',
+    icon: BookOpen,
   },
   {
     title: 'Our Mission',
     description: 'To create sustainable, energy-efficient street lighting systems that enhance public safety while minimizing environmental impact through smart sensor integration and adaptive control algorithms.',
-    icon: '🎯',
+    icon: Target,
   },
   {
     title: 'Our Vision',
     description: 'A future where every street light is intelligent, responsive, and optimized for both energy conservation and community safety, contributing to smarter, greener cities worldwide.',
-    icon: '🌟',
+    icon: Sparkles,
   },
 ];
 
